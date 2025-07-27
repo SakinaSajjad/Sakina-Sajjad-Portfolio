@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Sakina-Sajjad-Portfolio/static/css/main.5b619fa9.css",
+    "main.js": "/Sakina-Sajjad-Portfolio/static/js/main.66289846.js",
+    "static/media/BalloonBorder.png": "/Sakina-Sajjad-Portfolio/static/media/BalloonBorder.0f298774daa825b58fb1.png",
+    "static/media/mock5.png": "/Sakina-Sajjad-Portfolio/static/media/mock5.c9b5f54e8517e13fc897.png",
+    "static/media/self.png": "/Sakina-Sajjad-Portfolio/static/media/self.b4b0e3f2550c0d4b256a.png",
+    "static/media/mock2.png": "/Sakina-Sajjad-Portfolio/static/media/mock2.e8ed2c07928dfdc15a79.png",
+    "static/media/banner.png": "/Sakina-Sajjad-Portfolio/static/media/banner.eb19c1151b53340157ca.png",
+    "static/media/mock1.png": "/Sakina-Sajjad-Portfolio/static/media/mock1.e11f6103909e8c52d703.png",
+    "static/media/mock3.png": "/Sakina-Sajjad-Portfolio/static/media/mock3.8624cffbb7ae4e742c4c.png",
+    "static/media/mock4.png": "/Sakina-Sajjad-Portfolio/static/media/mock4.2b2ba794bc5cd75eb2c1.png",
+    "static/media/b10.png": "/Sakina-Sajjad-Portfolio/static/media/b10.1964da62107995e77ab4.png",
+    "static/media/b2.png": "/Sakina-Sajjad-Portfolio/static/media/b2.1964da62107995e77ab4.png",
+    "static/media/b1.png": "/Sakina-Sajjad-Portfolio/static/media/b1.35c2133489e3dfaa0ff4.png",
+    "static/media/b9.png": "/Sakina-Sajjad-Portfolio/static/media/b9.35c2133489e3dfaa0ff4.png",
+    "static/media/b7.png": "/Sakina-Sajjad-Portfolio/static/media/b7.d9bed7728c11c843ebc6.png",
+    "static/media/b5.png": "/Sakina-Sajjad-Portfolio/static/media/b5.bdc6acadcd5bbae2b5da.png",
+    "static/media/b4.png": "/Sakina-Sajjad-Portfolio/static/media/b4.ac6265f8033a0d876fb5.png",
+    "static/media/b3.png": "/Sakina-Sajjad-Portfolio/static/media/b3.d5b75a46790aab02ca7f.png",
+    "static/media/b8.png": "/Sakina-Sajjad-Portfolio/static/media/b8.d5b75a46790aab02ca7f.png",
+    "static/media/b6.png": "/Sakina-Sajjad-Portfolio/static/media/b6.458226e4deeb1e0a398d.png",
+    "index.html": "/Sakina-Sajjad-Portfolio/index.html",
+    "main.5b619fa9.css.map": "/Sakina-Sajjad-Portfolio/static/css/main.5b619fa9.css.map",
+    "main.66289846.js.map": "/Sakina-Sajjad-Portfolio/static/js/main.66289846.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b619fa9.css",
+    "static/js/main.66289846.js"
+  ]
+}
