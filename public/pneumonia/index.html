@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pneumonia Disease Detection System | Syeda Sakina Sajjad</title>
+  <meta name="description" content="Academic FYP project page for Syeda Sakina Sajjad — student portfolio, not a medical service." />
+  <title>Pneumonia Detection FYP | Syeda Sakina Sajjad</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
@@ -71,55 +72,59 @@
       font-size: 0.85rem;
       margin-bottom: 2rem;
     }
-    .status::before {
-      content: '';
-      width: 8px; height: 8px;
-      background: #f59e0b;
-      border-radius: 50%;
-      animation: pulse 2s infinite;
+    .disclaimer {
+      padding: 1rem 1.25rem;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      color: #64748b;
+      margin-bottom: 2rem;
     }
-    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
     .footer { margin-top: 2rem; font-size: 0.85rem; color: #9490b8; }
     a { color: #7c3aed; font-weight: 500; }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <span class="badge">Final Year Project · NUML</span>
-    <h1>Pneumonia Disease Detection System</h1>
-    <p class="subtitle">AI-powered cross-platform mobile healthcare app using chest X-ray image analysis</p>
+    <span class="badge">Final Year Project · NUML · Student Portfolio</span>
+    <h1>Pneumonia Detection FYP</h1>
+    <p class="subtitle">Academic research project — React Native app with ML-assisted image analysis (not a medical service)</p>
     <div class="status">In Active Development</div>
+
+    <p class="disclaimer">
+      This is a university Final Year Project by a CS student for learning purposes only.
+      It is not a licensed medical device and does not provide clinical diagnosis.
+    </p>
 
     <div class="card">
       <h2>Overview</h2>
-      <p>Building a cross-platform mobile application using React Native with a FastAPI (Python) backend. The system integrates an EfficientNetB3 deep learning model for pneumonia detection from chest X-ray images, with Firebase, OpenAI API, and Google Maps API for healthcare features.</p>
+      <p>Building a cross-platform mobile application using React Native with a FastAPI (Python) backend. The project explores EfficientNetB3 for chest X-ray image classification as part of academic coursework, with Firebase, OpenAI API, and Google Maps integration.</p>
       <div class="tags">
         <span class="tag">React Native</span>
         <span class="tag">FastAPI</span>
         <span class="tag">EfficientNetB3</span>
         <span class="tag">Firebase</span>
         <span class="tag">OpenAI API</span>
-        <span class="tag">Google Maps</span>
       </div>
     </div>
 
     <div class="card">
-      <h2>Key Features (Planned)</h2>
+      <h2>Planned Features</h2>
       <ul>
-        <li>Upload and analyze chest X-ray images for pneumonia detection</li>
-        <li>AI-powered diagnosis using EfficientNetB3 model</li>
-        <li>Healthcare assistant powered by OpenAI API</li>
-        <li>Location-based hospital finder via Google Maps</li>
-        <li>Secure authentication and data storage with Firebase</li>
+        <li>Image upload and ML model inference for learning demo</li>
+        <li>FastAPI backend for model serving</li>
+        <li>Firebase authentication and storage</li>
+        <li>Hospital locator via Google Maps API</li>
       </ul>
     </div>
 
     <div class="card">
       <h2>Developer</h2>
-      <p><strong>Syeda Sakina Sajjad</strong> — B.S. Computer Science, National University of Modern Languages (NUML)</p>
+      <p><strong>Syeda Sakina Sajjad</strong> — B.S. Computer Science, NUML University, Lahore, Pakistan</p>
     </div>
 
-    <p class="footer">Built by <a href="https://sakinasajjad.github.io/Sakina-Sajjad-Portfolio/">Syeda Sakina Sajjad</a> · Full app demo coming soon</p>
+    <p class="footer">Built by <a href="https://sakinasajjad.github.io/Syeda-Sakina-Sajjad-Portfolio/">Syeda Sakina Sajjad</a> · Full app demo coming soon</p>
   </div>
 </body>
 </html>

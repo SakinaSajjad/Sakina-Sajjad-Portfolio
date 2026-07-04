@@ -1,0 +1,4 @@
+Contact: mailto:sakinasajjad47@gmail.com
+Preferred-Languages: en
+Canonical: https://sakinasajjad.github.io/Syeda-Sakina-Sajjad-Portfolio/
+Policy: This is a personal developer portfolio for Syeda Sakina Sajjad, a CS student. Not a commercial or phishing site.

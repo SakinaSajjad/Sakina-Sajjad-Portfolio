@@ -95,7 +95,7 @@ export const info = {
             status: "In Progress",
             featured: true,
             description:
-                "Cross-platform mobile app using React Native with a FastAPI (Python) backend. Integrated EfficientNetB3 model for pneumonia detection from chest X-ray images. Uses Firebase, OpenAI API, and Google Maps API.",
+                "Cross-platform mobile app using React Native with a FastAPI (Python) backend. ML-assisted chest X-ray analysis for educational FYP research. Uses Firebase, OpenAI API, and Google Maps API.",
             tags: ["React Native", "FastAPI", "EfficientNetB3", "Firebase", "OpenAI"],
             live: "/pneumonia/",
             source: "https://github.com/SakinaSajjad/Pneumonia-Disease-Detection",
@@ -105,7 +105,7 @@ export const info = {
             title: "FlickVerse — Netflix Enhancement",
             badge: "Featured Build",
             description:
-                "React-based Netflix clone with social features — real-time comment box on movies/series and story upload functionality, making the platform interactive and community-driven.",
+                "React streaming UI project with social features — comment box on movies/series and story upload functionality for a university portfolio build.",
             tags: ["React", "Firebase", "Tailwind CSS", "Vite"],
             live: "https://sakinasajjad.github.io/FlickVerse-Netflix-Enahancement/",
             source: "https://github.com/SakinaSajjad/FlickVerse-Netflix-Enahancement",

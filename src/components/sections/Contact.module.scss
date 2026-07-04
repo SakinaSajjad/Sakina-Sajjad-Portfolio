@@ -1,101 +1,49 @@
 @import "../../variables.modules";
 
-.layout {
+.cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: start;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem;
 }
 
-.infoBlock {
-  h3 {
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: $text-muted;
-    margin-bottom: 0.5rem;
-  }
-
-  a, p {
-    font-size: 1rem;
-    color: $text-primary;
-    font-weight: 500;
-    margin-bottom: 2rem;
-    display: block;
-  }
-
-  a:hover {
-    color: $accent;
-  }
-}
-
-.form {
+.card {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  align-items: flex-start;
+  text-decoration: none;
+  color: inherit;
+  transition: $transition;
 
-  label {
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: $text-secondary;
-    margin-bottom: -0.5rem;
+  i {
+    font-size: 1.5rem;
+    color: $accent;
+    margin-bottom: 1rem;
   }
 
-  input, textarea {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    font-size: 0.95rem;
-    font-family: inherit;
+  h3 {
+    font-size: 1rem;
+    font-weight: 600;
     color: $text-primary;
-    background: $bg-primary;
-    border: 1px solid $border;
-    border-radius: $radius-md;
-    transition: $transition;
-    outline: none;
-
-    &:focus {
-      border-color: $accent;
-      box-shadow: 0 0 0 3px $accent-soft;
-    }
-
-    &::placeholder {
-      color: $text-muted;
-    }
+    margin-bottom: 0.35rem;
   }
 
-  textarea {
-    min-height: 120px;
-    resize: vertical;
-  }
-}
-
-.socials {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-
-  a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 42px;
-    height: 42px;
-    border-radius: $radius-md;
-    border: 1px solid $border;
+  p {
+    font-size: 0.9rem;
     color: $text-secondary;
-    font-size: 1.1rem;
-    transition: $transition;
-    margin-bottom: 0;
+    line-height: 1.5;
+    word-break: break-word;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: $accent-muted;
+  }
+
+  &.static {
+    cursor: default;
 
     &:hover {
-      color: $accent;
-      border-color: $accent;
-      background: $accent-soft;
+      transform: none;
     }
   }
 }
