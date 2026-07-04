@@ -1,0 +1,67 @@
+@import "../../variables.modules";
+
+.marquee {
+  overflow: hidden;
+  margin-bottom: 3rem;
+  padding: 1rem 0;
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+  background: linear-gradient(90deg, $bg-primary, $accent-soft, $bg-primary);
+
+  .track {
+    display: flex;
+    gap: 2rem;
+    animation: scroll 35s linear infinite;
+    width: max-content;
+  }
+
+  .item {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: $accent;
+    white-space: nowrap;
+    padding: 0.25rem 0;
+  }
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+
+.category {
+  h3 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    background: linear-gradient(135deg, $gradient-start, $gradient-end);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  li {
+    font-size: 0.9rem;
+    color: $text-primary;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid $border-light;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

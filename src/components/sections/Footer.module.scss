@@ -1,0 +1,92 @@
+@import "../../variables.modules";
+
+.footer {
+  background: $bg-secondary;
+  border-top: 1px solid $border;
+  padding: 3rem 0 2rem;
+}
+
+.inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 4vw, 2rem);
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.brand {
+  h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: $text-primary;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+    color: $text-secondary;
+    line-height: 1.65;
+    max-width: 320px;
+  }
+}
+
+.col {
+  h4 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: $text-muted;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  a {
+    font-size: 0.875rem;
+    color: $text-secondary;
+    transition: $transition;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid $border;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  p {
+    font-size: 0.8rem;
+    color: $text-muted;
+  }
+
+  a {
+    font-size: 0.8rem;
+    color: $text-muted;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}

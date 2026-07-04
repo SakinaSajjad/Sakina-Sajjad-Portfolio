@@ -1,0 +1,41 @@
+$accent: #7c3aed;
+$accent-secondary: #ec4899;
+$accent-tertiary: #06b6d4;
+$accent-hover: #6d28d9;
+$accent-soft: #f5f3ff;
+$accent-muted: #ede9fe;
+$gradient-start: #7c3aed;
+$gradient-end: #ec4899;
+
+$bg-primary: #ffffff;
+$bg-secondary: #faf8ff;
+$bg-tertiary: #f3f0ff;
+
+$text-primary: #1e1b4b;
+$text-secondary: #4c4a6a;
+$text-muted: #9490b8;
+
+$border: #e8e4f8;
+$border-light: #f3f0ff;
+
+$card-shadow: 0 2px 8px rgba(124, 58, 237, 0.06), 0 8px 24px rgba(124, 58, 237, 0.05);
+$card-shadow-hover: 0 8px 32px rgba(124, 58, 237, 0.14);
+
+$radius-sm: 8px;
+$radius-md: 12px;
+$radius-lg: 16px;
+$radius-xl: 24px;
+
+$transition: all 0.25s ease;
+$nav-height: 72px;
+$section-padding: clamp(4rem, 8vw, 7rem);
+
+// legacy aliases (used by old components)
+$white: $bg-primary;
+$dark: $text-primary;
+$purple: $accent;
+$pink: $accent-secondary;
+$lightgray: $border;
+$red: #FF6057;
+$yellow: #FFBD2E;
+$green: #22c55e;

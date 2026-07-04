@@ -1,0 +1,112 @@
+@import "../../variables.modules";
+
+.section {
+  padding: $section-padding 0;
+  scroll-margin-top: $nav-height;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 4vw, 2rem);
+}
+
+.label {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, $gradient-start, $gradient-end);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.75rem;
+}
+
+.heading {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: $text-primary;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  max-width: 720px;
+}
+
+.subheading {
+  font-size: 1.05rem;
+  color: $text-secondary;
+  max-width: 640px;
+  line-height: 1.7;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  background: $accent-soft;
+  color: $accent;
+  border: 1px solid $accent-muted;
+}
+
+.btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, $gradient-start, $gradient-end);
+  border-radius: $radius-md;
+  border: none;
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(124, 58, 237, 0.35);
+    color: #fff;
+  }
+}
+
+.btnSecondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: $accent;
+  background: $bg-primary;
+  border: 1px solid $accent-muted;
+  border-radius: $radius-md;
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    border-color: $accent;
+    background: $accent-soft;
+    transform: translateY(-2px);
+  }
+}
+
+.card {
+  background: $bg-primary;
+  border: 1px solid $border;
+  border-radius: $radius-lg;
+  padding: 1.75rem;
+  box-shadow: $card-shadow;
+  transition: $transition;
+
+  &:hover {
+    box-shadow: $card-shadow-hover;
+    border-color: $accent-muted;
+  }
+}
+
+.altBg {
+  background: $bg-secondary;
+}

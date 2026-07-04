@@ -1,0 +1,90 @@
+@import "../../variables.modules";
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.item {
+  position: relative;
+  padding-left: 1rem;
+  border-left: 3px solid transparent;
+  border-image: linear-gradient(180deg, $gradient-start, $gradient-end) 1;
+
+  h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: $text-primary;
+    margin-bottom: 0.25rem;
+  }
+
+  .school {
+    font-size: 0.9rem;
+    color: $accent;
+    font-weight: 500;
+    margin-bottom: 0.35rem;
+  }
+
+  .meta {
+    font-size: 0.82rem;
+    color: $text-muted;
+    margin-bottom: 0.5rem;
+  }
+
+  .detail {
+    font-size: 0.9rem;
+    color: $text-secondary;
+    font-weight: 500;
+  }
+}
+
+.languages {
+  margin-top: 2.5rem;
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: $text-primary;
+    margin-bottom: 1rem;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+
+.courses {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+
+  h3 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: $accent;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  li {
+    font-size: 0.9rem;
+    color: $text-secondary;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid $border-light;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
