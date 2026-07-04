@@ -20,7 +20,7 @@ export default function Education({ innerRef }) {
                             <div className={Style.item}>
                                 <h3>{edu.degree}</h3>
                                 <div className={Style.school}>{edu.school}</div>
-                                <div className={Style.meta}>{edu.period}</div>
+                                {edu.period && <div className={Style.meta}>{edu.period}</div>}
                                 <div className={Style.detail}>{edu.detail}</div>
                             </div>
                         </div>

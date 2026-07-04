@@ -12,7 +12,6 @@ const links = [
     { name: 'About', to: 'about', active: 'about' },
     { name: 'Services', to: 'services', active: 'services' },
     { name: 'Work', to: 'work', active: 'work' },
-    { name: 'Experience', to: 'experience', active: 'experience' },
     { name: 'Education', to: 'education', active: 'education' },
     { name: 'Contact', to: 'contact', active: 'contact' },
 ];

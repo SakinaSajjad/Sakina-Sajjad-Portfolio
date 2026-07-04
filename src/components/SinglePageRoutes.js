@@ -4,7 +4,6 @@ import AboutSection from './sections/AboutSection';
 import Services from './sections/Services';
 import Work from './sections/Work';
 import TechStack from './sections/TechStack';
-import Experience from './sections/Experience';
 import Education from './sections/Education';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
@@ -17,7 +16,6 @@ export default function SinglePageRoutes({ refs }) {
             <Services innerRef={refs.refServices} />
             <Work innerRef={refs.refWork} />
             <TechStack />
-            <Experience innerRef={refs.refExperience} />
             <Education innerRef={refs.refEducation} />
             <Contact innerRef={refs.refContact} />
             <Footer />

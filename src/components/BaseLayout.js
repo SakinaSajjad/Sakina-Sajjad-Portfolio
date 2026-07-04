@@ -17,7 +17,6 @@ export default function BaseLayout() {
     const refAbout = useScrollObserver(setActive);
     const refServices = useScrollObserver(setActive);
     const refWork = useScrollObserver(setActive);
-    const refExperience = useScrollObserver(setActive);
     const refEducation = useScrollObserver(setActive);
     const refContact = useScrollObserver(setActive);
 
@@ -36,7 +35,6 @@ export default function BaseLayout() {
                             refAbout,
                             refServices,
                             refWork,
-                            refExperience,
                             refEducation,
                             refContact,
                         }}

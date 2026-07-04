@@ -12,7 +12,6 @@ const navLinks = [
     { label: 'About', to: 'about' },
     { label: 'Services', to: 'services' },
     { label: 'Work', to: 'work' },
-    { label: 'Experience', to: 'experience' },
     { label: 'Education', to: 'education' },
     { label: 'Contact', to: 'contact' },
 ];

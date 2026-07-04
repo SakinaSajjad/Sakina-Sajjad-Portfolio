@@ -152,21 +152,6 @@ export const info = {
         tools: ["VS Code", "Visual Studio", "GitHub", "Google Colab", "Excel"],
     },
 
-    experience: [
-        {
-            role: "Teacher Assistant (Internship)",
-            company: "National University of Modern Languages (NUML)",
-            period: "2 Months",
-            location: "Islamabad, Pakistan",
-            bullets: [
-                "Learned office management practices while assisting with day-to-day administrative tasks.",
-                "Used Excel for maintaining and organizing institutional records.",
-                "Performed data entry and helped manage institutional records.",
-            ],
-            tags: ["Excel", "Administration", "Data Entry"],
-        },
-    ],
-
     education: [
         {
             degree: "B.S. Computer Science",
@@ -182,8 +167,8 @@ export const info = {
         },
         {
             degree: "Matriculation",
-            school: "—",
-            period: "—",
+            school: "Jinnah Officers School",
+            period: "",
             detail: "998 Marks (90%)",
         },
     ],
