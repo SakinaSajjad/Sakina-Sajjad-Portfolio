@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Style from './Navbar.module.scss';
 import { HashLink } from 'react-router-hash-link';
 import { info } from '../info/Info';
+import ThemeToggle from './ThemeToggle';
 
 const scrollWithOffset = (el) => {
     const y = el.getBoundingClientRect().top + window.pageYOffset;
@@ -51,14 +52,17 @@ export default function Navbar({ active, setActive }) {
                         ))}
                     </div>
 
-                    <HashLink
-                        to="#contact"
-                        scroll={scrollWithOffset}
-                        className={Style.cta}
-                        onClick={() => handleClick('contact')}
-                    >
-                        Get in Touch
-                    </HashLink>
+                    <div className={Style.actions}>
+                        <ThemeToggle />
+                        <HashLink
+                            to="#contact"
+                            scroll={scrollWithOffset}
+                            className={Style.cta}
+                            onClick={() => handleClick('contact')}
+                        >
+                            Get in Touch
+                        </HashLink>
+                    </div>
 
                     <button
                         className={Style.mobileToggle}
@@ -82,15 +86,17 @@ export default function Navbar({ active, setActive }) {
                         {link.name}
                     </HashLink>
                 ))}
-                <HashLink
-                    to="#contact"
-                    scroll={scrollWithOffset}
-                    className={Style.cta}
-                    onClick={() => handleClick('contact')}
-                    style={{ marginTop: '0.5rem', justifyContent: 'center' }}
-                >
-                    Get in Touch
-                </HashLink>
+                <div className={Style.mobileActions}>
+                    <ThemeToggle />
+                    <HashLink
+                        to="#contact"
+                        scroll={scrollWithOffset}
+                        className={Style.cta}
+                        onClick={() => handleClick('contact')}
+                    >
+                        Get in Touch
+                    </HashLink>
+                </div>
             </div>
         </>
     );

@@ -2,24 +2,27 @@ $accent: #7c3aed;
 $accent-secondary: #ec4899;
 $accent-tertiary: #06b6d4;
 $accent-hover: #6d28d9;
-$accent-soft: #f5f3ff;
-$accent-muted: #ede9fe;
+$accent-soft: var(--accent-soft);
+$accent-muted: var(--accent-muted);
 $gradient-start: #7c3aed;
 $gradient-end: #ec4899;
 
-$bg-primary: #ffffff;
-$bg-secondary: #faf8ff;
-$bg-tertiary: #f3f0ff;
+$bg-primary: var(--bg-primary);
+$bg-secondary: var(--bg-secondary);
+$bg-tertiary: var(--bg-tertiary);
 
-$text-primary: #1e1b4b;
-$text-secondary: #4c4a6a;
-$text-muted: #9490b8;
+$text-primary: var(--text-primary);
+$text-secondary: var(--text-secondary);
+$text-muted: var(--text-muted);
 
-$border: #e8e4f8;
-$border-light: #f3f0ff;
+$border: var(--border);
+$border-light: var(--border-light);
 
-$card-shadow: 0 2px 8px rgba(124, 58, 237, 0.06), 0 8px 24px rgba(124, 58, 237, 0.05);
-$card-shadow-hover: 0 8px 32px rgba(124, 58, 237, 0.14);
+$card-shadow: var(--card-shadow);
+$card-shadow-hover: var(--card-shadow-hover);
+
+$nav-bg: var(--nav-bg);
+$nav-mobile-bg: var(--nav-mobile-bg);
 
 $radius-sm: 8px;
 $radius-md: 12px;

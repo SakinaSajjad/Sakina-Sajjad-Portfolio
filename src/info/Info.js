@@ -20,8 +20,9 @@ export const info = {
     baseColor: colors[0],
     email: "sakinasajjad47@gmail.com",
     phone: "+92 310 4246653",
+    whatsappNumber: "+92 310 4246653",
     location: "Lahore, Pakistan",
-    availability: "Open to internships & entry-level roles",
+    availability: "Open to internships, entry-level roles, remote & hybrid — also available for freelancing clients",
 
     heroDescription:
         "Motivated Computer Science student with an interest in Mobile App Development and AI. Currently learning React Native and exploring AI integration in mobile applications. Also have foundational knowledge of ASP.NET Core MVC, SQL Server, and Web APIs. Eager to learn, grow, and contribute as an entry-level developer.",

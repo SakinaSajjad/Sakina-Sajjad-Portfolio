@@ -1,17 +1,17 @@
 import React from 'react';
 import './App.module.scss';
 import BaseLayout from "./components/BaseLayout";
-import {BrowserRouter} from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
    return (
-      <div>
+      <ThemeProvider>
          <BrowserRouter basename={process.env.PUBLIC_URL}>
-            <BaseLayout/>
+            <BaseLayout />
          </BrowserRouter>
-      </div>
+      </ThemeProvider>
    );
 }
-
 
 export default App;

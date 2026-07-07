@@ -1,10 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SectionHeader from './SectionHeader';
 import shared from './shared.module.scss';
 import Style from './Contact.module.scss';
+import ContactForm from './ContactForm';
 import { info } from '../../info/Info';
 
 export default function Contact({ innerRef }) {
+    const [copied, setCopied] = useState(false);
+
+    const copyWhatsApp = async () => {
+        const number = info.whatsappNumber;
+        try {
+            await navigator.clipboard.writeText(number);
+        } catch {
+            const el = document.createElement('textarea');
+            el.value = number;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+        }
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2500);
+    };
+
     return (
         <section ref={innerRef} id="contact" className={shared.section}>
             <div className={shared.container}>
@@ -21,11 +40,15 @@ export default function Contact({ innerRef }) {
                         <p>{info.email}</p>
                     </a>
 
-                    <a href={`tel:${info.phone.replace(/\s/g, '')}`} className={`${shared.card} ${Style.card}`}>
-                        <i className="fa fa-phone" />
-                        <h3>Call / WhatsApp</h3>
-                        <p>{info.phone}</p>
-                    </a>
+                    <button
+                        type="button"
+                        className={`${shared.card} ${Style.card} ${Style.whatsappBtn}`}
+                        onClick={copyWhatsApp}
+                    >
+                        <i className="fa fa-whatsapp" />
+                        <h3>WhatsApp</h3>
+                        <p>{copied ? 'Number copied to clipboard!' : 'Click to copy my WhatsApp number'}</p>
+                    </button>
 
                     <div className={`${shared.card} ${Style.card} ${Style.static}`}>
                         <i className="fa fa-map-marker" />
@@ -47,6 +70,8 @@ export default function Contact({ innerRef }) {
                         </a>
                     ))}
                 </div>
+
+                <ContactForm />
             </div>
         </section>
     );

@@ -50,9 +50,6 @@ export default function Footer() {
                             <li>
                                 <a href={`mailto:${info.email}`}>{info.email}</a>
                             </li>
-                            <li>
-                                <a href={`tel:${info.phone.replace(/\s/g, '')}`}>{info.phone}</a>
-                            </li>
                             {info.socials.map((social, i) => (
                                 <li key={i}>
                                     <a href={social.link} target="_blank" rel="noopener noreferrer">

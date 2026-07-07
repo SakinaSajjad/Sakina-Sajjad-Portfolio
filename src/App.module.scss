@@ -1,6 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import "./variables.modules";
 
+:root,
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #faf8ff;
+  --bg-tertiary: #f3f0ff;
+  --text-primary: #1e1b4b;
+  --text-secondary: #4c4a6a;
+  --text-muted: #9490b8;
+  --border: #e8e4f8;
+  --border-light: #f3f0ff;
+  --accent-soft: #f5f3ff;
+  --accent-muted: #ede9fe;
+  --card-shadow: 0 2px 8px rgba(124, 58, 237, 0.06), 0 8px 24px rgba(124, 58, 237, 0.05);
+  --card-shadow-hover: 0 8px 32px rgba(124, 58, 237, 0.14);
+  --nav-bg: rgba(255, 255, 255, 0.9);
+  --nav-mobile-bg: rgba(255, 255, 255, 0.97);
+}
+
+[data-theme="dark"] {
+  --bg-primary: #0c0a14;
+  --bg-secondary: #12101f;
+  --bg-tertiary: #1a1730;
+  --text-primary: #ede9fe;
+  --text-secondary: #b4b0d0;
+  --text-muted: #7a7599;
+  --border: #2a2545;
+  --border-light: #1e1b35;
+  --accent-soft: rgba(124, 58, 237, 0.12);
+  --accent-muted: rgba(124, 58, 237, 0.25);
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.2);
+  --card-shadow-hover: 0 8px 32px rgba(124, 58, 237, 0.2);
+  --nav-bg: rgba(12, 10, 20, 0.92);
+  --nav-mobile-bg: rgba(12, 10, 20, 0.97);
+}
+
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 16px;
@@ -10,6 +45,7 @@ body {
   background-color: $bg-primary;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 li {

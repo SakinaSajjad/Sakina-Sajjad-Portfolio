@@ -46,4 +46,15 @@
       transform: none;
     }
   }
+
+  &.whatsappBtn {
+    text-align: left;
+    cursor: pointer;
+    font-family: inherit;
+    width: 100%;
+
+    i {
+      color: #25d366;
+    }
+  }
 }

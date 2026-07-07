@@ -7,7 +7,7 @@
   right: 0;
   z-index: 100;
   height: $nav-height;
-  background: rgba(255, 255, 255, 0.9);
+  background: $nav-bg;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid $border;
@@ -97,6 +97,25 @@
   }
 }
 
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.mobileActions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid $border;
+}
+
 .mobileToggle {
   display: none;
   background: none;
@@ -117,7 +136,7 @@
   top: $nav-height;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.97);
+  background: $nav-mobile-bg;
   backdrop-filter: blur(16px);
   border-bottom: 1px solid $border;
   padding: 1rem clamp(1.25rem, 4vw, 2rem) 1.5rem;

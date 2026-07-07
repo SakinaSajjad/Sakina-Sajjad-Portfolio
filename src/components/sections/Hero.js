@@ -29,8 +29,6 @@ export default function Hero({ innerRef }) {
                         <p className={Style.role}>{info.position}</p>
 
                         <div className={Style.contactRow}>
-                            <span><i className="fa fa-phone" /> {info.phone}</span>
-                            <span className={Style.sep}>•</span>
                             <a href={`mailto:${info.email}`}><i className="fa fa-envelope" /> {info.email}</a>
                             <span className={Style.sep}>•</span>
                             <span><i className="fa fa-map-marker" /> {info.location}</span>
