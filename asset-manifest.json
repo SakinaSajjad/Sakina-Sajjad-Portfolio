@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Sakina-Sajjad-Portfolio/static/css/main.0bbe7823.css",
-    "main.js": "/Sakina-Sajjad-Portfolio/static/js/main.0b9d1d3d.js",
+    "main.css": "/Sakina-Sajjad-Portfolio/static/css/main.ba81bc63.css",
+    "main.js": "/Sakina-Sajjad-Portfolio/static/js/main.ecbba183.js",
     "static/media/BalloonBorder.png": "/Sakina-Sajjad-Portfolio/static/media/BalloonBorder.0f298774daa825b58fb1.png",
     "static/media/mock5.png": "/Sakina-Sajjad-Portfolio/static/media/mock5.c9b5f54e8517e13fc897.png",
     "static/media/self.png": "/Sakina-Sajjad-Portfolio/static/media/self.b4b0e3f2550c0d4b256a.png",
@@ -22,11 +22,11 @@
     "static/media/b8.png": "/Sakina-Sajjad-Portfolio/static/media/b8.d5b75a46790aab02ca7f.png",
     "static/media/b6.png": "/Sakina-Sajjad-Portfolio/static/media/b6.458226e4deeb1e0a398d.png",
     "index.html": "/Sakina-Sajjad-Portfolio/index.html",
-    "main.0bbe7823.css.map": "/Sakina-Sajjad-Portfolio/static/css/main.0bbe7823.css.map",
-    "main.0b9d1d3d.js.map": "/Sakina-Sajjad-Portfolio/static/js/main.0b9d1d3d.js.map"
+    "main.ba81bc63.css.map": "/Sakina-Sajjad-Portfolio/static/css/main.ba81bc63.css.map",
+    "main.ecbba183.js.map": "/Sakina-Sajjad-Portfolio/static/js/main.ecbba183.js.map"
   },
   "entrypoints": [
-    "static/css/main.0bbe7823.css",
-    "static/js/main.0b9d1d3d.js"
+    "static/css/main.ba81bc63.css",
+    "static/js/main.ecbba183.js"
   ]
 }
