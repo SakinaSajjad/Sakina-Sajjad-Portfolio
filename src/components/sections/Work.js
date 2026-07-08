@@ -41,14 +41,20 @@ export default function Work({ innerRef }) {
                                 )}
                                 <div className={Style.links}>
                                     {project.live && (
-                                        <a
-                                            href={project.live}
-                                            target={project.live.startsWith('http') ? '_blank' : undefined}
-                                            rel={project.live.startsWith('http') ? 'noopener noreferrer' : undefined}
-                                            className={Style.link}
-                                        >
-                                            Live Demo →
-                                        </a>
+                                        project.live.startsWith('http') ? (
+                                            <a
+                                                href={project.live}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className={Style.link}
+                                            >
+                                                Live Demo →
+                                            </a>
+                                        ) : (
+                                            <a href={project.live} className={Style.link}>
+                                                Live Demo →
+                                            </a>
+                                        )
                                     )}
                                     {project.source && (
                                         <a href={project.source} target="_blank" rel="noopener noreferrer" className={Style.linkSecondary}>
